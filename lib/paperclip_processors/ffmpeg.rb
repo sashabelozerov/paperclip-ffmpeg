@@ -132,7 +132,7 @@ module Paperclip
       when 'webm' # WebM
         @convert_options[:output][:acodec] = 'libvorbis'
         @convert_options[:output][:vcodec] = 'libvpx'
-        @convert_options[:output][:b:v] = '1500k'
+        @convert_options[:output][:'b:v'] = '1500k'
         @convert_options[:output][:f] = 'webm'
       when 'ogv' # Ogg Theora
         @convert_options[:output][:acodec] = 'libvorbis'
